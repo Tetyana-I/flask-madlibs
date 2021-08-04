@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block title %}Story Form{% endblock %}
 {% block content %} 
-    <form action="/story">
+    <form action={{story}}>
         {% for prompt in prompts %}
             <label>{{prompt}}:</label>
             <input type="text" name = {{prompt}}>
